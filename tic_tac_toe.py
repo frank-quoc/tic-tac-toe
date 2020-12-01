@@ -1,5 +1,7 @@
-import random
 import time
+from random import randint
+
+from board import new_board, print_board
 
 def instructions():
     """Displays how to to play the game and the rules."""
@@ -11,22 +13,6 @@ Moves can be made by inputting the numbers 1-9 and are representing each space i
 -+-+-
 1|2|3 
 The games is over when the either the player or computer gets 3 in a row, column, or diagonally.\n''')
-
-def new_board():
-    """Sets the new board."""
-    board = {   7: ' ', 8: ' ', 9: ' ',
-                4: ' ', 5: ' ', 6: ' ',
-                1: ' ', 2: ' ', 3: ' '  }
-    return board
-
-def print_board(board):
-    """Prints the current board."""
-    print(board[7] + '|' + board[8] + '|' + board[9])
-    print('-+-+-')
-    print(board[4] + '|' + board[5] + '|' + board[6])
-    print('-+-+-')
-    print(board[1] + '|' + board[2] + '|' + board[3])
-    print()
 
 def x_or_o():
     """Player picks 'X' or 'O'. Computer will be the other choice"""
@@ -46,7 +32,7 @@ def x_or_o():
 def pick_first_player(human, computer):
     """Chooses who goes first."""
     print("Flipping a coin...")
-    first_player = random.randint(0, 1)
+    first_player = randint(0, 1)
     if first_player == 0:
         print("Human player gets to go first.\n")
         return human
@@ -94,7 +80,7 @@ def comp_move(board, computer, human):
         board[k] = hold_val
     # Otherwise, just pick a random square.
     while True:
-        comp_move = random.randint(1, 9)
+        comp_move = randint(1, 9)
         if board[comp_move] != " ":
             continue
         return comp_move
@@ -112,6 +98,7 @@ def winner(board):
 
 def restart():
     again = input("\nWould you like to start again? (y/n) ").lower()
+    print()
     if again != 'y':
         exit()
     else:
