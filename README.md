@@ -8,8 +8,8 @@
 
 1. [About The Project](README.md#about-the-project)
 2. [Getting Started](README.md#getting-started)
-    * Prerequisites
-    * Installation
+    * [Prerequisites](README.md#prerequisites)
+    * [Installation](README.md#installation)
 3. [Game Rules](README.md#game-rules)
 4. [File Descriptions](README.md#file-descriptions)
 5. [Contact](README.md#contact)
