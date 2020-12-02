@@ -62,4 +62,5 @@ Project Link: [https://github.com/frank-quoc/tic-tac-toe](https://github.com/fra
 
 ## Acknowledgements
 [The Classic Tic-Tac-Toe Game in Python 3](https://medium.com/byte-tales/the-classic-tic-tac-toe-game-in-python-3-1427c68b8874) by James Shah
+[Stack Overflow Question](https://stackoverflow.com/questions/22285833/python-tic-tac-toe-game)
 
