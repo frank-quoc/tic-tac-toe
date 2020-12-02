@@ -41,7 +41,7 @@ git clone https://github.com/frank-quoc/tic-tac-toe.git
 You, as a player, can pick either 'X' or 'O'.
 A coin will be flipped to determine if the player or the computer goes first.
 The winner is the first player to get 3 in a row.
-It's a draw of there's if all the squares are filled up with no winners.
+It's a draw of if all the squares are filled up with no winners.
 ```
 
 ![Tic-Tac-Toe: Computer Win](/images/tic_tac_toe_comp_win.png)
